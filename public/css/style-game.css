@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #997036;
+    background-size: cover;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-top: -20px;
+    margin-left: -20px;
+}
+
+.logo-child {
+    margin-right: 30px;
+    position: relative;
+    top: 18px;
+    color: #ec9e18;
+    font-size: 30px;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.fa-less-than {
+    width: 80px;
+    color: #a1651f;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    height: 20px;
+}
+
+.logo-1 {
+    width: 50px;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.player1, .com {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 2em;
+    padding-right: 2em;
+    position: relative;
+    top: 15px;
+}
+
+h3 ~ div {
+    width: 6.3em;
+    margin: 20px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.vs {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    top: 100px;
+}
+
+
+.vs .image:active {
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+.vs img {
+    cursor:pointer;
+}
+
+@media only screen and (max-width: 736px) {
+    h3 ~ img {
+      width: 4em;
+      margin: 15px;
+    }
+  }
+
+.hand {
+    cursor: pointer;
+}
+
+#backgroundRock, #backgroundPaper, #backgroundScissors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+}
+
+#backgroundRock-COM, #backgroundPaper-COM, #backgroundScissors-COM {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+}
+
+.vs .only-vs {
+    position: relative;
+    top: -130px;
+    width: 170px;
+    font-size: 50px;
+    color: #490202;
+}
+
+/* .refresh {
+    position: relative;
+    top: -70px;
+    height: 80px;
+} */
+
+.vs .result .result-draw {
+    background-color: #086111;
+    position: relative;
+    top: -150px;
+    font-size: 0.7em;
+    transform: rotate(-30deg);
+    padding: 15px;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.result-draw {
+    background-color: #1acf2c;
+    top: -40px;
+    position: relative;
+}
